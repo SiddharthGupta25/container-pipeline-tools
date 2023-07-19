@@ -8,8 +8,8 @@ fi
 
 
 SELENIUM_NODE_NAME=$1
-#APPLICATION_DEPLOYMENT_FILENAME="../../application-deployment.yaml"
-APPLICATION_DEPLOYMENT_FILENAME="build/scripts/application-deployment.yaml"
+APPLICATION_DEPLOYMENT_FILENAME="../../application-deployment.yaml"
+
 
 
 sed -i "s|path:.*|path: $SELENIUM_NODE_NAME|g" $APPLICATION_DEPLOYMENT_FILENAME
