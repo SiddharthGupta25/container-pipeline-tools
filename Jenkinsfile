@@ -23,7 +23,8 @@ pipeline {
                 sh "echo [+] Adding ${params.NAME} to Selenium Hub"
 
                 dir('build/scripts'){
-                    sh "chmod +x ./deployment-manager.sh ${params.NAME}"
+                    sh "chmod +x ./deployment-manager.sh"
+                    sh "./deployment-manager.sh ${params.NAME}"
                 }
             }
         }
