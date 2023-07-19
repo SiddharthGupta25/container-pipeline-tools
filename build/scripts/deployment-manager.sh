@@ -16,10 +16,10 @@ sed -i "s|path:.*|path: $SELENIUM_NODE_NAME|g" $APPLICATION_DEPLOYMENT_FILENAME
 echo "[+] Path set to $SELENIUM_NODE_NAME"
 
 echo "[*] Applying the deployment to cluster"
-#kubectl apply -f $deployment_yaml
+kubectl apply -f $deployment_yaml
 
 echo "[*] Waiting for deployment to complete"
-#kubectl rollout status deployment/my-app
+kubectl rollout status deployment/myapp-argo-application
 
 echo "[+] Deployment completed"
 
