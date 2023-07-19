@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/SiddharthGupta25/container-pipeline-tools.git
     targetRevision: HEAD
-    path: dev
+    path: chrome
   destination: 
     server: https://kubernetes.default.svc
     namespace: myapp
